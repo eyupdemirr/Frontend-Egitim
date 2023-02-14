@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar</title>
+</head>
+
+<body>
+    <h1>Geri Bildirim Formu</h1>
+    <form name="GeriBildirim" action="gBildirim.php" method="GET">
+        Ad: <input type="text" name="ad" id="id1" size="25" maxlength="30" required>
+        <br>
+        Soyad: <input type="text" name="soyad" id="id2" size="25" maxlength="30" required>
+        <br>
+        Email: <input type="email" name="email" id="id3" size="25" required>
+        <br>
+        Web: <input type="url" name="url" id="id4" size="25">
+        <br>
+        Yaş: <input type="number" name="yas" id="id5" size="25" required>
+        <!--* Butonlar üzerinde default olarak gönder veya submit yazar-->
+        <!--* Bunları istediğimiz şekilde düzenlemek için value="..." özelliğini kullanırız.-->
+        <br>
+        <br>
+        <input type="submit" value="Onayla"> &nbsp;
+        <input type="reset" value="Reddet">
+    </form>
+</body>
+
+</html>

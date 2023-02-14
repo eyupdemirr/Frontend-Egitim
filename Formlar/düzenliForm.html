@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar</title>
+</head>
+
+<body>
+    <h1>Geri Bildirim Formu</h1>
+    <form name="GeriBildirim" action="gBildirim.php" method="GET">
+        <table border="1">
+            <tr>
+                <td>Ad: </td>
+                <td><input type="text" name="ad" id="id1" size="25" maxlength="30" required></td>
+            </tr>
+            <tr>
+                <td>Soyad</td>
+                <td><input type="text" name="soyad" id="id2" size="25" maxlength="30" required></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" id="id3" size="25" required></td>
+            </tr>
+            <tr>
+                <td>Yaş</td>
+                <td><input type="url" name="url" id="id4" size="25"></td>
+            </tr>
+            <tr>
+                <td>Web</td>
+                <td><input type="number" name="yas" id="id5" size="25" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><input type="submit" value="Onayla"> <input type="reset"
+                        value="Reddet"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
