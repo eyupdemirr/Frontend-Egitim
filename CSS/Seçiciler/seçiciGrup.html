@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grup Seçiciler</title>
+    <!--* Birden fazla seçiciyi belirtebilirsiniz-->
+    <style>
+        * {
+            font-size: 25px;
+        }
+
+        h1,
+        h2 {
+            color: green;
+        }
+
+        h2 u {
+            color: red;
+        }
+
+        h2 #mi {
+            color: purple;
+        }
+
+        p.egik {
+            font-style: italic;
+        }
+
+        p.kalin {
+            color: blue;
+        }
+    </style>
+</head>
+<!--* Görüldüğü üzere yukarıda h2 u{} css kodu sadece h2deki u'lara etki etmiştir.-->
+<!--* h1'deki u'ya etki etmemiştir. Buda Etiket İçinde Etikettir.-->
+
+<body>
+    <h1><u>Grup Seçiciler</u></h1>
+    <h2>h2 <u>bir</u> başlık</h2>
+    <p class="egik">HTML</p>
+    <p class="kalin">CSS</p>
+    <p>Javascript</p>
+
+    <h2>h2 Başka <u>Bir</u> <span id="mi">Başlık</span></h2>
+    <p class="egik">React</p>
+    <p class="kalin">Angular</p>
+    <p>Node.js</p>
+</body>
+
+</html>
