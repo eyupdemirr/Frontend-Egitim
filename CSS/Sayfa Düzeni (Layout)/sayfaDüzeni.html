@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayfa Düzeni Düzenleme</title>
+    <style>
+        * {
+            border: 6px;
+        }
+
+        #sayfa {
+            border-style: solid;
+            width: 400px;
+            margin: auto;
+            background-color: darkred;
+        }
+
+        header {
+            border-style: dotted;
+            border-color: green;
+            background-color: purple;
+            width: 300px;
+            margin: auto;
+            height: 50px;
+        }
+
+        nav {
+            border-style: double;
+            border-color: orange;
+            background-color: green;
+            width: 300px;
+            margin: auto;
+            height: 35px;
+        }
+
+        article {
+            border-style: dashed;
+            border-color: aqua;
+            background-color: orange;
+            width: 300px;
+            margin: auto;
+            height: 250px;
+        }
+
+        footer {
+            border-style: solid;
+            border-color: red;
+            background-color: aqua;
+            width: 300px;
+            margin: auto;
+            height: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--* Normalde Düzen Etiketlerine id verilmesi gerekir yoksa css uygulamalarında karışıklık yaşanır-->
+    <!--* Fakat Biz tüm etiketlerden birer tane kullandığımız için id vermeye gerek yok.-->
+    <div id="sayfa">
+        <header>
+            Buraya Logo ve Firma İsimleri Gelebilir
+        </header>
+        <nav>
+            Buraya Menü Tuşları Gelir
+        </nav>
+        <article>
+            Buraya İçerik Menüsü
+        </article>
+        <footer>
+            Buraya Sayfayı Tasarlayan Kişinin İmzası Gelebilir
+        </footer>
+    </div>
+</body>
+
+</html>

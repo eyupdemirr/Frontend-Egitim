@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutu Konumları</title>
+    <style>
+        div {
+            border-color: chocolate;
+            border-style: solid;
+        }
+
+        #buyuk {
+            width: 200px;
+            height: 100px;
+            background-color: khaki;
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+            z-index: 1;
+            border-radius: 25px;
+            border-width: 3px 8px 8px 3px;
+        }
+
+        #bkucuk {
+            width: 100px;
+            height: 50px;
+            background-color: lightcoral;
+            position: absolute;
+            left: 75px;
+            top: 40px;
+        }
+
+        #kucuk {
+            width: 100px;
+            height: 50px;
+            background-color: teal;
+            position: relative;
+            left: 1050px;
+            top: 1150px;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="buyuk">
+        <div id="bkucuk">
+
+        </div>
+    </div>
+    <div id="kucuk">
+
+    </div>
+</body>
+
+</html>
