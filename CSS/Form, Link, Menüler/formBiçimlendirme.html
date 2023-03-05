@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formların Bİçimlendirilmesi</title>
+    <style>
+        input[type=text],
+        [type=email] {
+            color: darkblue;
+            background-color: gray;
+            font-size: 16px;
+            font-weight: bolder;
+        }
+
+        .buttons {
+            text-align: center;
+            margin: auto;
+            background-color: green;
+        }
+
+        input[type=submit]:hover,
+        [type=reset]:hover {
+            background-color: aqua;
+        }
+
+        input[type=submit]:active {
+            background-color: green;
+        }
+
+        input[type=reset]:active {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formların Bİçimlendirilmesi</h1>
+    <form>
+        <table border="1">
+            <tr>
+                <td>Ad Soyad:</td>
+                <td><input type="text" name="" id="" title="Ad Soyad" placeholder="Ad Soyad"></td>
+            </tr>
+            <tr>
+                <td>E-Mail:</td>
+                <td><input type="email" name="" id="" title="E-Mail" placeholder="E-Mail"></td>
+            </tr>
+            <tr>
+                <td>Mesaj:</td>
+                <td><textarea name="" id="" cols="30" rows="10" title="Mesaj" placeholder="Mesaj"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="buttons">
+                    <input type="submit" value="Onayla"><input type="reset" value="Vazgeç">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
