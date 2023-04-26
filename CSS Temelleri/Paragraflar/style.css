@@ -1,0 +1,92 @@
+/*! Paragraf Ayarları*/
+
+p:nth-child(1) {
+  text-indent: 10px;
+  text-align: left;
+  line-height: 40px;
+}
+p:nth-child(2) {
+  text-indent: 20px;
+  text-align: justify;
+  line-height: 20px;
+}
+p:nth-child(3) {
+  text-indent: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+/*! Yazıtipi Ayarları */
+
+p:nth-child(1) {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  text-decoration: dotted;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+p:nth-child(2) {
+  color: green;
+  /*font-family: "Times New Roman", Times, serif;*/
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  font-variant: normal;
+  text-transform: capitalize;
+  text-decoration: double;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+}
+p:nth-child(3) {
+  color: blue;
+  font-size: 28px;
+  font-weight: bolder;
+  font-style: oblique;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  text-decoration: solid;
+  letter-spacing: 10px;
+  word-spacing: 10px;
+}
+
+/*! Web Güvenli Yazı Tipleri */
+/* WebSafe yazı Tipleri Aşağıdaki Gibidir. 
+    * Arial (sans-serif)
+    * Verdana (sans-serif)
+    * Tahoma (sans-serif)
+    * Trebuchet MS (sans-serif)
+    * Times New Roman (serif)
+    * Georgia (serif)
+    * Garamond (serif)
+    * Courier New (monospace)
+    * Brush Script MT (cursive)
+*/
+
+/*! Google Fonts */
+p:nth-child(3) {
+  font-family: sofia;
+}
+
+/*! Metinlerde Ardalan İşlemleri */
+p:nth-child(1) {
+  background-color: aqua;
+  background-image: url();
+}
+p:nth-child(2) {
+  background-color: blanchedalmond;
+  background-image: url();
+}
+p:nth-child(3) {
+  background-color: darkgoldenrod;
+  background-image: url();
+}
+
+/*! Liste Madde İmlerinin Biçimlendirilmesi */
+ul {
+  list-style-type: decimal-leading-zero;
+}
