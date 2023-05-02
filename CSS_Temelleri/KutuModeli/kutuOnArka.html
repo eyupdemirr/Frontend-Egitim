@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutuları Öne Arkaya Alma</title>
+    <style>
+        div {
+            border: solid 5px;
+            font-weight: bolder;
+            font-size: 24px;
+        }
+
+        #bir {
+            padding: 5px;
+            margin: 5px;
+            height: 200px;
+            width: 250px;
+            background-color: blue;
+            z-index: 1;
+        }
+
+        #iki {
+            position: relative;
+            padding: 5px;
+            margin: 5px;
+            height: 220px;
+            width: 100px;
+            background-color: brown;
+            z-index: -1;
+            left: 50px;
+            top: -50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bir">
+        Kutu Bir <br>
+        z-index büyük olan kutular herzaman daha önde gözükür
+    </div>
+    <div id="iki">
+        Kutu İki
+    </div>
+</body>
+
+</html>

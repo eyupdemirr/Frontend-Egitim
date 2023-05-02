@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutudan Taşan İçeriklerin Ayarlanması</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: solid 5px green;
+            margin-top: 100px;
+        }
+
+        #visible {
+            overflow: visible;
+        }
+
+        #hidden {
+            overflow: hidden;
+        }
+
+        #scroll {
+            overflow: scroll;
+        }
+
+        #auto {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="visible">
+        overflow:visible (default) <br>
+        kutu ölçeğinden daha fazla içerik alma durumunda içerik alt taraftan taşma yapacaktır.
+    </div>
+    <div id="hidden">
+        overflow:hidden <br>
+        kutu ölçeğinden fazla gelerek kutudan taşan içeriğin taşan kısmı gösterilmeyecektir.
+    </div>
+    <div id="scroll">
+        overflow:scroll <br>
+        kutu ölçeğinden fazla gelerek kutudan taşan içerik kaydırma çubuğu ile kutu içinde aşağı yukarı kaydırılarak
+        gösterilebilir olacaktır.
+    </div>
+    <div id="auto">
+        overflow:auto <br>
+        kutu içeriğinde taşma var ise scroll özelliği gibi kaydırılabilir olacaktır. Eğer taşma yoksa visible gibi
+        normal gözükecektir.
+    </div>
+</body>
+
+</html>

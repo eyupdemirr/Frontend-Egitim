@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutu Pozisyonlarının Ayarlanması</title>
+    <style>
+        div {
+            border: solid 5px;
+        }
+
+        #buyuk {
+            height: 200px;
+            width: 250px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        #orta {
+            height: 150px;
+            width: 200px;
+            padding: 5px;
+            margin: 5px;
+            position: relative;
+            left: 300px;
+            bottom: 0px;
+        }
+
+        #kucuk {
+            height: 100px;
+            width: 150px;
+            padding: 5px;
+            margin: 5px;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+
+        #ibuyuk {
+            height: 250px;
+            width: 250px;
+            padding: 5px;
+            margin: 5px;
+            position: absolute;
+
+        }
+
+        #iorta {
+            height: 175px;
+            width: 200px;
+            padding: 5px;
+            margin: 5px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+
+        }
+
+        #ikucuk {
+            height: 100px;
+            width: 150px;
+            padding: 5px;
+            margin: 5px;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="buyuk">
+        Buyuk Kutu <br>
+        position:static (default)
+    </div>
+    <div id="orta">
+        Orta Kutu <br>
+        position:relative
+    </div>
+    <div id="kucuk">
+        position:fixed
+    </div>
+
+    <div id="ibuyuk">
+        İç İçe Buyuk Kutu <br>
+        position:absolute
+        <div id="iorta">
+            İç İçe Orta Kutu <br>
+            position:absolute
+            <div id="ikucuk">
+                İç İçe Kucuk Kutu <br>
+                position:absolute
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
