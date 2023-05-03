@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css İle Form Biçimlendirme</title>
+    <style>
+        #formGenel {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            border: solid darkred 5px;
+            border-radius: 15px;
+            padding: 15px;
+            width: 90%;
+            margin: auto;
+            background-color: darkolivegreen;
+        }
+
+        input {
+            border: double darkslateblue 5px;
+            color: black;
+            padding: 5px;
+            margin: 5px;
+            font-weight: bold;
+        }
+
+        input:focus {
+            background-color: aqua;
+            border: double darkred 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="formGenel">
+        <form action="">
+            <table>
+                <tr>
+                    <td>Ad Soyad: </td>
+                    <td><input type="text" name="AdSoyad" id="adSoyad"></td>
+                </tr>
+                <tr>
+                    <td>Yaş: </td>
+                    <td><input type="number" name="Yas" id="yas"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Gönder</button></td>
+                    <td><button type="reset">Sil</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

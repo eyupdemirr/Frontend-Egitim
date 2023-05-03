@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saydamlık (Opacity)</title>
+    <style>
+        #kutu {
+            width: 700px;
+            height: 200px;
+            border: hsl(303, 58%, 36%) solid 5px;
+            background-color: rgb(230, 84, 49);
+            color: darkblue;
+        }
+
+        #resim1 {
+            position: relative;
+            left: 40px;
+            top: -50px;
+            opacity: 1;
+        }
+
+        #resim2 {
+            position: relative;
+            left: 100px;
+            top: -50px;
+            opacity: 0.5;
+        }
+
+        #resim1:hover {
+            transition: 0.5s;
+            opacity: 0.5;
+        }
+
+        #resim2:hover {
+            transition: 0.5s;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="kutu">
+        kutu
+    </div>
+    <img id="resim1" src="/CSS_Temelleri/turkbayrak.jpg" alt="Türk Bayrağı">
+    <img id="resim2" src="/CSS_Temelleri/turkbayrak.jpg" alt="Türk Bayrağı">
+
+</body>
+
+</html>
