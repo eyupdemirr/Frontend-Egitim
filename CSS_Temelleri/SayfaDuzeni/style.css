@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+}
+#container {
+  border: solid black 3px;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+#logo {
+  border: solid chocolate 1px;
+  width: 100%;
+  height: 50px;
+  background-color: darkblue;
+}
+#menu {
+  border: solid chocolate 1px;
+  width: 100%;
+  height: 50px;
+  background-color: aqua;
+}
+#icerik {
+  border: solid chocolate 1px;
+  width: 70%;
+  min-height: 500px;
+  background-color: chocolate;
+  float: left;
+}
+#yanMenu {
+  border: solid chocolate 1px;
+  width: 30%;
+  min-height: 500px;
+  background-color: brown;
+  float: left;
+}
+#altMenu {
+  border: solid chocolate 1px;
+  width: 100%;
+  height: 50px;
+  background-color: indigo;
+  float: left;
+}
