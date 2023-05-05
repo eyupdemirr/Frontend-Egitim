@@ -6,10 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css İle Menu Biçimlendirme</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            border: solid darkolivegreen 3px;
+            width: 100px;
+            padding: 5px;
+            border-radius: 8px;
+            margin: 5px;
+            background-color: darkred;
+            float: left;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:link {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #00bcd4;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: indigo
+        }
+
+        a:hover {
+            color: chocolate;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: darkolivegreen;
+        }
+    </style>
 </head>
 
 <body>
-
+    <ul>
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">BenKimim?</a></li>
+        <li><a href="#">Iletisim</a></li>
+    </ul>
 </body>
 
 </html>

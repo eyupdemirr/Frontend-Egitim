@@ -6,10 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css İle Link Biçimlendirme</title>
+    <style>
+        nav {
+            width: 85%;
+            height: 50px;
+            border: solid aqua 3px;
+            border-radius: 15px;
+            padding: 5px;
+            margin: auto;
+            text-align: center;
+            word-spacing: 15px;
+            background-color: antiquewhite;
+        }
+
+        a {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        a:link {
+            color: #00bcd4;
+        }
+
+        a:visited {
+            color: indigo
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: chocolate
+        }
+
+        a:active {
+            color: #00bcd4;
+        }
+    </style>
 </head>
 
 <body>
-
+    <nav>
+        <a href="">Anasayfa</a> |
+        <a href="">Menu</a> |
+        <a href="">BenKimim?</a> |
+        <a href="">Iletisim</a>
+    </nav>
 </body>
 
 </html>
