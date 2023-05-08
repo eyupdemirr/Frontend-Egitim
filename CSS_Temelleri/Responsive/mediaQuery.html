@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Kod Sorgusu</title>
+    <style>
+        img {
+            width: 300px;
+            height: 100px;
+            border: solid black;
+            object-fit: cover;
+        }
+
+        /*Sorgulama için "and" kullanılır*/
+        /*Ekran Genişliği 700px veya küçükse body tagının içindeki elemanların 
+        arkplan rengini aqua yapacak*/
+        @media screen and (max-width:700px) {
+            body {
+                background-color: aqua;
+            }
+
+            img {
+                width: 100%;
+                border: double red;
+                object-fit: none;
+            }
+        }
+
+        /*Ekran (only)Sadece Yatay tutulurken body tagi altındaki elemanların arkaplan rengini .. yapar*/
+        @media only screen and (orientation:landscape) {
+            body {
+                background-color: chocolate;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Css Kod Sorgusu</h1>
+    <img src="/CSS_Temelleri/turkbayrak.jpg" alt="">
+</body>
+
+</html>
