@@ -1,2 +1,0 @@
-// encodeURIComponent() Metodu
-// 
