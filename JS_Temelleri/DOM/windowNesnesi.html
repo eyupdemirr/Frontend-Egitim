@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Nesnesi</title>
+</head>
+
+<body>
+
+    <button type="button" onclick="window.print()"> Yazdır </button>
+
+    <input type="button" value=" Pencere Aç " onclick="pencere()">
+
+    <script>
+        console.log(window.innerHeight + 'px');
+        console.log(window.innerWidth + 'px');
+        window.confirm('Kabulmü?');
+
+        // window.open() Metodu
+        function pencere() {
+            // metotların başına window. yazmak zorunda değilsiniz. 
+            open("index.html", "_blank", "height=450, width=450");
+        }
+
+
+        // window.setTimeout() Metodu
+        function zamanDoldu() {
+            alert("!!!Zaman Doldu!!!");
+        }
+        setTimeout(zamanDoldu, 5000);
+
+
+        var i = 0;
+        function say() {
+            document.getElementById("kutu").innerHTML = "<b>" + i;
+
+            i++;
+        }
+        //Saniye 1 defa kodu çalıştır
+        setInterval(say, 1000);
+    </script>
+    <div id="kutu"></div>
+</body>
+
+</html>

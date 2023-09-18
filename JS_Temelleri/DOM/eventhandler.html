@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Olayları</title>
+</head>
+
+<body onload="Selam()">
+    <!-- onclick() Olayı -->
+    <h2>onclick() Olayı</h2>
+    <input type="button" value="Tıkla" onclick="tikla()">
+
+    <script>
+        function tikla() {
+            alert("Butona Tıklandı..")
+        }
+    </script>
+
+    <hr>
+
+    <!-- onclick() ile CSS Kodları -->
+    <h2 id="baslik1">onclick() Olayı ile CSS Kodları</h2>
+    <button type="button" onclick="document.getElementById('baslik1').style.color = 'red'">
+        Tıkla
+    </button>
+
+    <hr>
+
+    <!-- onclick() Olayı ve this Nesnesi -->
+    <h2>onclick() Olayı ve this Nesnesi</h2>
+    <p id="tiklat" onclick="this.innerHTML='Selam'">Tıkla</p>
+    <button type="button" onclick="document.getElementById('tiklat').style.color = 'red'">
+        Tıkla
+    </button>
+
+    <hr>
+
+    <!-- onclick() ile Nesne Atama -->
+    <h2> onclick() ile Nesne Atama </h2>
+    <button type="button" onclick="tarih()">Tarihi Yazdır</button>
+    <p id="tarih"></p>
+    <script>
+        function tarih() {
+            document.getElementById("tarih").innerHTML = Date();
+        }
+    </script>
+
+    <p id="tar"></p>
+    <script>
+        var an = new Date();
+        var yil = an.getFullYear();
+        var ay = an.getMonth();
+        var gun = an.getDay();
+        var tarihh = "Tarih= " + gun + "/" + ay + "/" + yil;
+        document.getElementById("tar").innerHTML = tarihh;
+    </script>
+
+    <hr>
+
+    <!-- onload() Olayı ile Fonksiyon Çalıştırma -->
+    <h2>onload() Olayı ile Fonksiyon Çalıştırma</h2>
+    <p>Sayfa açılışlarında alert kutusu içerisinde Merhaba yazacaktır.</p>
+    <script>
+        function Selam() {
+            alert("Merhaba");
+        }
+    </script>
+</body>
+
+</html>

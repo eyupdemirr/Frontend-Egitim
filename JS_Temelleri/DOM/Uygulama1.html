@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uygulamalar</title>
+</head>
+
+<body>
+    <h1 id="konu">Konu Başlığı</h1>
+
+    <p id="bir"></p>
+    <p id="iki"></p>
+
+    <img src="Assets/bayrak1.jpeg" alt="TürkBayrağı" id="bayrak" onmouseover="karabayrak()" onmouseout="albayrak()">
+    <script>
+        document.getElementById("konu").innerHTML = "Konuların Başlığıdır Konu Başlığı";
+
+        // Görselleştirme
+        document.getElementById("konu").style.color = "green";
+        document.getElementById("konu").style.textDecoration = "underline";
+        document.getElementById("konu").style.fontFamily = "Arial";
+
+        // Paragraflar
+        document.getElementById("bir").innerHTML = "<b>Birinci Paragraf</b>";
+        document.getElementById("iki").innerText = "<b>İkinci Paragraf</b>";
+
+        // Özellik Değiştirme
+        var bayrak = document.getElementById("bayrak");
+        function albayrak() {
+            bayrak.src = "Assets/bayrak1.jpeg";
+        }
+        function karabayrak() {
+            bayrak.src = "Assets/bayrak2.jpeg";
+        }
+    </script>
+</body>
+
+</html>

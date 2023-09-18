@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 300;
+        }
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+        ul li {
+            list-style-type: circle;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Document Object Model</h1>
+
+    <p>DOM ile html kodları eklenip silinebilir</p>
+
+    <ul>
+        <li>HTML komutlarının içerikleri değiştirilebilir</li>
+        <li>CSS kodları değiştirilebilir</li>
+        <li>HTML olayları tetiklenebilir</li>
+    </ul>
+
+    <p id="id"></p>
+
+    <script>
+        //Document Özellikleri
+        document.write("Document Özellikleri" + "<br>");
+        document.write("Sayfa Adresi: " + document.URL + "<br>");
+        document.write("Sayfa Başlığı: " + document.title + "<br>");
+        document.write("Gelinen Sayfa: " + document.referrer + "<br>");
+        document.write("Sayfa Genişliği: " + document.documentElement.clientWidth + "<br>");
+        document.write("Sayfa Yüksekliği: " + document.documentElement.clientHeight + "<br>");
+        document.write("Karakter Seti: " + document.characterSet + "<br>");
+        document.write("Son Güncelleme: " + document.lastModified + "<br>");
+
+        document.getElementById("id").innerHTML = "Merhaba";
+        document.getElementsByTagName("p");
+        document.getElementsByClassName();
+    </script>
+
+    <!-- Uygulamalar -->
+    <script src="DOM.js"></script>
+</body>
+
+</html>
