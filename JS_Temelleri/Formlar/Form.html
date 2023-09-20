@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ile Form İşlemleri</title>
+</head>
+
+<body>
+    <h1 id="baslik">Form İşlemleri</h1>
+
+    <script>
+        document.getElementById("baslik").style.color = "red";
+        document.getElementById("baslik").style.fontFamily = "arial";
+        document.getElementById("baslik").style.fontWeight = "700";
+    </script>
+
+    <br>
+    <hr>
+
+    <!-- Formlarda Fonksiyon -->
+    <h2>Formlarda Fonksiyon</h2>
+
+    <input type="button" value="Selam" onclick="yaz_merhaba()">
+    <script>
+        var kullaniciAdi = prompt("İsminizi Giriniz= ");
+        function yaz_merhaba() {
+            alert("Merhaba " + kullaniciAdi);
+        }
+    </script>
+
+    <br>
+
+    <!-- Formlarda Değişken veya Değer Yazdırma -->
+    <h2>Formlarda Değişken veya Değer Yazdırma</h2>
+
+    <p id="ozet">icerik</p>
+    <script>
+        var icerik = prompt("Sizce İçerik Ne? ");
+        document.getElementById("ozet").innerHTML = ('içerik= ' + icerik);
+
+    </script>
+
+    <br>
+    <hr>
+
+    <!-- Formdan Veri Okuma -->
+    <h2>Formdan Veri Okuma</h2>
+
+    <form>
+        Ad: <input type="text" id="ad"><br>
+        <input type="button" value="OK" onclick="yaz()">
+    </form>
+    <script>
+        function yaz() {
+            var isim = document.getElementById("ad").value;
+            alert(isim);
+        }
+    </script>
+
+    <br>
+    <hr>
+
+    <!-- Formdan Okunan Sayının Karesi -->
+    <h2>Formdan Okunan Sayının Karesi</h2>
+
+    Sayı: <input type="text" id="sayi">
+    Karesi: <span id="sonuc"></span><br>
+    <input type="button" value="Hesapla" onclick="hesapla()"><br>
+    <script>
+        function hesapla() {
+            var sayi, karesi;
+            sayi = document.getElementById("sayi").value;
+            karesi = sayi * sayi;
+            document.getElementById("sonuc").innerHTML = karesi;
+        }
+    </script>
+
+    <br>
+    <hr>
+
+    <!-- Formdan Okunan İki Sayının Toplamı -->
+    <h2>Formdan Okunan İki Sayının Toplamı</h2>
+
+    Sayı1: <input type="text" id="sayi1">
+    Sayı2: <input type="text" id="sayi2">
+    Toplam: <span id="toplam"></span><br>
+    Ortalama: <span id="ortalama"></span><br>
+    <input type="button" value="Hesapla" onclick="toplama()"><br>
+    <script>
+        function toplama() {
+            sayi1 = Number(document.getElementById("sayi1").value);
+            sayi2 = Number(document.getElementById("sayi2").value);
+
+            toplam = sayi1 + sayi2;
+            ortalama = (sayi1 + sayi2) / 2;
+            document.getElementById("toplam").innerHTML = toplam;
+            document.getElementById("ortalama").innerHTML = ortalama;
+        }
+    </script>
+
+    <br>
+    <hr>
+
+    <!-- Formdan Okunan Sayının Karesi Detaylı ve Kontrollü-->
+    <h2>Formdan Okunan Sayının Karesi Detaylı ve Kontrollü</h2>
+    <p style="text-decoration: underline; color: brown;">
+        Sıfır ve Negatif girilen değerlerde uyarı verecektir. Eğer input boş bırakılırsa aynı şekilde uyarı verecektir
+    </p>
+
+    <form>
+        Sayı: <input type="text" id="Sayi">
+        Karesi: <span type="text" id="kare"></span>
+        <input type="button" value="Hesapla" onclick="hesap()">
+    </form>
+    <script>
+        function hesap() {
+            var Sayi = document.getElementById("Sayi").value;
+
+            if (Sayi == "") {
+                alert("!!!Lütfen Sayi Giriniz!!!");
+            }
+            else {
+                Sayi = Number(Sayi);
+                if (Sayi <= 0) {
+                    alert("!!!Pozitif Sayi Giriniz!!!");
+                }
+                else {
+                    var Kare = Sayi * Sayi;
+                    document.getElementById("kare").innerHTML = Kare;
+                }
+            }
+        }
+    </script>
+
+    <br>
+    <hr>
+
+    <!-- Formdan Okunan Sayının Karesi Gelişmiş -->
+    <h2>Formdan Okunan Sayının Karesi Gelişmiş</h2>
+    <form onload="odaklan()">
+        Sayı2: <input type="text" id="Sayi2">
+        Karesi2: <span type="text" id="kare2"></span>
+        <input type="button" value="Hesapla" onclick="hesap2()">
+    </form>
+    <script>
+        function odaklan() {
+            document.getElementById("Sayi2").style.background = "yellow";
+            document.getElementById("Sayi2").focus();
+        }
+        function hesap2() {
+            var Sayi2 = document.getElementById("Sayi2").value;
+
+            if (Sayi2 == "") {
+                document.getElementById("Sayi2").style.background = "red";
+                document.getElementById('Sayi2').focus();
+                alert("!!!Lütfen Sayi Giriniz!!!");
+            }
+            else {
+                Sayi2 = Number(Sayi2);
+                if (Sayi2 <= 0) {
+                    document.getElementById("Sayi2").style.background = "red";
+                    document.getElementById('Sayi2').focus();
+                    alert("!!!Pozitif Sayi Giriniz!!!");
+                }
+                else {
+                    var Kare2 = Sayi2 * Sayi2;
+                    document.getElementById("kare2").innerHTML = Kare2;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
