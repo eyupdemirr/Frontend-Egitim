@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>throw ile Hata Fırlatma Uygulaması</title>
+</head>
+
+<body>
+    <h2>throw ile Hata Fırlatma</h2>
+
+    <p>Lütfen 5 ile 10 arası bir sayı giriniz!</p>
+    <input type="text" id="sayi">
+    <button type="button" onclick="kontrol()">Giriş Testi</button>
+    <p id="test"></p>
+    <p id="sonuc"></p>
+    <script>
+        function kontrol() {
+            var ileti, x;
+
+            ileti = document.getElementById("test")
+            // önceki hata iletisini temizleme
+            ileti.innerHTML = "";
+
+            // girilen sayi değerini çekme
+            x = document.getElementById("sayi").value;
+            try {
+                if (x == "") throw "BOŞ!";
+                if (isNaN(x)) throw "Sayı DEĞİL!";
+
+                // veri türünü Number'a çevirme
+                x = Number(x);
+
+                if (x < 5 || x > 10) throw "x değeri 5 ile 10 arasında olmalıdır!";
+            } catch (err) {
+                ileti.innerHTML = "Girilen Değer " + err;
+            }
+
+            finally {
+                document.getElementById("sonuc").innerHTML = 'Girilen Değer= ' + x;
+            }
+        }
+    </script>
+
+    <br>
+    <hr>
+    <h2>Hata Yönetimi Eğitimi Sonu</h2>
+</body>
+
+</html>

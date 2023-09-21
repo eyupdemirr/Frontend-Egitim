@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hata Yönetimi</title>
+</head>
+
+<body>
+    <h2>JS Hata Türleri</h2>
+    <ol>
+        <li>Yazım <u>(Syntax)</u> Hataları</li>
+        <li>Mantıksal <u>(Logical)</u> Hataları</li>
+        <li>Kullanıcı <u>(User)</u> Hataları</li>
+    </ol>
+
+    <script>
+        // Yazım Hataları
+
+        function hata1() {
+            alert("Hata -1");
+        }
+        hata1; //hata1(); Yazılmalı
+
+        // hata -2
+        function hata2() {
+            ulert("Hata -2"); //alert() Yazılmalı
+        }
+        hata2();
+    </script>
+
+    <script>
+        // Mantıklsal Hatalar
+
+        var a = 1, b = 2, toplam = a + b;
+        alert("Toplam= " + topla); //toplam Olmalı
+
+        var ortalama = a + b / 2; //(a+b)/2 Yazılmalı
+        alert("ortalama= " + ortalama);
+    </script>
+
+    <a href="debugging.html" target="_blank" rel="noopener noreferrer">Sonraki Eğitime Geçiniz (Debugging)</a>
+</body>
+
+</html>

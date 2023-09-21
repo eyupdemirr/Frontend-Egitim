@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hata Yönetim Blokları</title>
+</head>
+
+<body>
+    <h2>Hata Yönetim Blokları</h2>
+
+    <p id="test"></p>
+    <script>
+        try {
+            alert("Hello World"); //Sorunsuz Çalışacaktır
+            aalert("Hello World"); //Hata Mesajı Ekrana Yazılacaktır
+        } catch (err) {
+            document.getElementById("test").innerHTML = ("Hata= " + err.message);
+        }
+    </script>
+
+    <a href="Uyg_throw.html" target="_blank" rel="noopener noreferrer">
+        throw ile hata fırlatma uygulaması
+    </a>
+</body>
+
+</html>
